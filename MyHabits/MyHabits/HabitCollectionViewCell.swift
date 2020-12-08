@@ -96,9 +96,7 @@ class HabitCollectionViewCell: UICollectionViewCell {
 
         HabitsStore.shared.track(i)
         HabitsStore.shared.save()
-        UIView.animate(withDuration: 0.5, animations: {
             self.reloadProgress()
-        })
         habitCircle.image = UIImage(systemName: "checkmark.circle.fill")
     habitCircle.tintColor = habitCheck.tintColor
 
